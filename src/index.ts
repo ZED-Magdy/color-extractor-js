@@ -1,7 +1,6 @@
 export { Color } from './core/Color';
 export { Palette } from './core/Palette';
 export { ColorExtractor } from './core/ColorExtractor';
-export { ImageDecoder } from './core/ImageDecoder';
 
 export type {
   ImageData,

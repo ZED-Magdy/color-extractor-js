@@ -7,17 +7,16 @@ const GREEN_SHIFT = 8;
 const HEX_PAD_LENGTH = 6;
 
 export class Color {
-  static toHex(color: number, includeHash = true): string {
-    const hex = color.toString(HEX_RADIX).toUpperCase().padStart(HEX_PAD_LENGTH, '0');
-    return includeHash ? `#${hex}` : hex;
+  static fromIntToHex(color: number): string {
+    return '#' + color.toString(HEX_RADIX).toUpperCase().padStart(HEX_PAD_LENGTH, '0');
   }
 
-  static fromHex(hex: string): number {
+  static fromHexToInt(hex: string): number {
     const cleanHex = hex.replace('#', '');
     return parseInt(cleanHex, HEX_RADIX);
   }
 
-  static toRgb(color: number): RgbColor {
+  static fromIntToRgb(color: number): RgbColor {
     return {
       r: (color >> RED_SHIFT) & RGB_MAX,
       g: (color >> GREEN_SHIFT) & RGB_MAX,
@@ -25,7 +24,7 @@ export class Color {
     };
   }
 
-  static fromRgb({ r, g, b }: RgbColor): number {
-    return (r << RED_SHIFT) | (g << GREEN_SHIFT) | b;
+  static fromRgbToInt(rgb: RgbColor): number {
+    return (rgb.r << RED_SHIFT) | (rgb.g << GREEN_SHIFT) | rgb.b;
   }
 } 

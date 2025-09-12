@@ -1,5 +1,5 @@
 {
-  "name": "color-extractor",
+  "name": "@zedmagdy/color-extractor",
   "version": "1.0.0",
   "description": "Extract dominant colors from images with perceptual color analysis",
   "main": "dist/index.js",
@@ -21,11 +21,11 @@
     "color-analysis",
     "typescript"
   ],
-  "author": "Color Extractor Contributors",
+  "author": "ZED-Magdy",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/color-extractor"
+    "url": "https://github.com/ZED-Magdy/color-extractor"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -33,6 +33,9 @@
   "files": [
     "dist/**/*"
   ],
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "jest": "^30.1.3",
