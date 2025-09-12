@@ -1,0 +1,75 @@
+# Source files (only include compiled dist/)
+src/
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Development dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build tools and configs
+tsconfig.json
+jest.config.js
+.eslintrc*
+.prettierrc*
+webpack.config.js
+rollup.config.js
+
+# Test coverage
+coverage/
+*.lcov
+
+# Development files
+.github/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env*
+
+# Logs
+logs/
+*.log
+
+# Cache directories
+.npm
+.eslintcache
+*.tsbuildinfo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git files
+.git/
+.gitignore
+
+# Documentation drafts
+docs/
+examples/
+benchmarks/
+
+# Temporary files
+tmp/
+temp/
+
+# Lock files (let users choose their package manager)
+package-lock.json
+yarn.lock
+
+# Only include these files in the npm package:
+# - dist/ (compiled JavaScript)
+# - README.md
+# - LICENSE
+# - package.json 

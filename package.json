@@ -1,0 +1,42 @@
+{
+  "name": "color-extractor",
+  "version": "1.0.0",
+  "description": "Extract dominant colors from images with perceptual color analysis",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "color",
+    "extract",
+    "palette",
+    "image",
+    "dominant-colors",
+    "color-analysis",
+    "typescript"
+  ],
+  "author": "Color Extractor Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/color-extractor"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3",
+    "ts-jest": "^29.4.1",
+    "typescript": "^5.9.2"
+  }
+}
