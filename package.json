@@ -1,6 +1,6 @@
 {
   "name": "@zedmagdy/color-extractor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extract dominant colors from images with perceptual color analysis",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZED-Magdy/color-extractor"
+    "url": "https://github.com/ZED-Magdy/color-extractor-js"
   },
   "engines": {
     "node": ">=14.0.0"
